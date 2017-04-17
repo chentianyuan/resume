@@ -1,0 +1,581 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	/*background:rgb(31,33,34);*/
+	font-family:"微软雅黑",FontAwesome !important;;
+	padding:30px;
+	position:relative;
+	width:90%;
+	height:90%;
+	margin:0 auto;
+	background:rgb(50,53,58);
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+.topper{
+	width:100%;
+	height:30px;
+	background:rgb(31,33,34);
+	position:fixed;
+	top:0;
+	z-index:100;
+	left:0;
+}
+
+.rightter{
+	width:40px;
+	height:100%;
+	background:rgb(31,33,34);
+	position:fixed;
+	top:0;
+	right:0;
+	z-index:100;
+}
+
+.leftter{
+	width:40px;
+	height:100%;
+	background:rgb(31,33,34);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+}
+
+.bottommer{
+	width:100%;
+	height:30px;
+	background:rgb(31,33,34);
+	position:fixed;
+	left:0;
+	z-index:100;
+	bottom:0;	
+}
+body a{
+	text-decoration:none;
+	cursor:pointer;
+}
+
+body ul{
+	list-style:none;
+}
+
+body:after {
+	content:'';
+	position:fixed;
+	top:0;
+	right:0;
+	border-top:60px solid rgb(31,33,34);
+	border-right:60px solid rgb(31,33,34);
+	border-bottom:60px solid transparent;
+	border-left:60px solid transparent;	
+	z-index:100;
+}
+
+body:before{
+	content:'';
+	position:fixed;
+	bottom:0;
+	left:0;
+	border-top:60px solid transparent;
+	border-right:60px solid transparent;
+	border-bottom:60px solid rgb(31,33,34);
+	border-left:60px solid rgb(31,33,34);	
+	z-index:100;
+}
+
+.head-bar-nav{
+	width:100%;
+	height:167px;
+}
+
+.til{
+	float:left;
+	width:12%;
+	height:167px;
+	margin-left:10%;
+}
+
+.til span{
+	line-height:167px;
+	color:white;
+	font-size:27px;
+	font-weight:500;
+	-webkit-font-smoothing:initial;
+}
+
+.nav{
+	display:inline-block;
+	float:right;
+	height:167px;
+	margin-right:102px;
+}
+
+.nav-bar{
+	width:100%;
+	height:167px;
+	list-style:none;
+	float:right;
+}
+
+.nav-bar-tip{
+	display:inline-block;
+	vertical-align:center;
+	padding:0 20px;
+}
+
+.nav-bar-tip a{
+	line-height:167px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+}
+
+.nav-bar-tip a:hover{
+	color:rgb(182,187,189);
+	text-decoration:underline;
+}
+
+.nav-bar-tip .active{
+	color:rgb(182,187,189);
+}
+
+.btm-line{
+	display:block;
+	margin:0 auto;
+	width:80%;
+	border-top:3px solid rgb(69,72,78);
+	clear:both;
+}
+
+.body-content{
+	width:100%;
+}
+
+.introduction{
+	margin-top:20px;
+	text-align:center;
+	color:#fff;
+}
+
+.introduction h2{
+	opacity:0;
+	letter-spacing:1px;
+	padding:30px;
+/*	animation: h-move 2s;*/
+}
+
+
+
+.introduction p{
+	opacity:0;
+	font-weight:bold;
+	padding:10px;
+/*	animation:p-move 4s;	
+	animation-delay:0.2;
+	animation-fill-mode : forwards;
+*/
+}
+
+/*
+@keyframes h-move{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+@keyframes p-move{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+*/
+
+.introduction p:last-child{
+	padding:40px;
+}
+/*板块二*/
+.muen-2{
+	position:relative;
+	width:100%;
+	/*left:-100%;*/
+	/*opacity:0;*/
+}
+
+.muen-2 ul{
+	width:100%;
+	margin:40px auto 0;
+	height:50px;
+}
+
+.muen-2 ul li{
+	float:left;
+	width:25%;
+	font-size:20px;
+	font-weight:600;
+	text-align:center;
+	color:rgb(182,187,189);	
+	border-radius:10px; 
+	transition: all 0.3s;/*过度渐变*/	 
+}
+
+.muen-2 ul li:hover{
+	cursor:pointer;
+	background:#eee;
+	transform: scale(1.1);/*比例缩放*/
+}
+
+.skills{
+	width:100%;
+	margin:10px auto;
+	height:300px;
+	overflow:hidden;
+	text-align:center;
+}
+
+.skills p{
+	position:relative;
+	color:#fff;
+	font-size:25px;
+	letter-spacing:1px;
+	line-height:30px;
+	animation:move 2s;
+	animation-fill-mode:forwards;
+	padding:20px 0;
+}
+
+@keyframes move{
+	from{top:100%}
+	to{top:0%}
+}
+
+.foot-nav{
+	width:100%;
+	height:100px;
+}
+
+.bottom-nav{
+	width:80%;
+	height:45px;
+	text-align:center;
+	margin:10px auto;
+	padding:10px;
+	
+}
+
+.bottom-nav-1{
+	margin:10px;
+	display:inline-block;
+	border:1px solid rgb(69,72,78);
+}
+
+.bottom-nav-1 a{
+	display:block;
+	padding:5px 20px;
+	color:#fff;
+	font-weight:500;
+	font-size:11px;
+	-webkit-font-smoothing:inherit;
+}
+
+.bottom-nav-1:hover{
+	background:rgb(78,145,201);
+	cursor:pointer;
+}
+
+.foot-content{
+	width:100%;
+	height:80px;
+	text-align:center;
+	color:rgb(182,187,189);
+}
+
+.foot-content p{
+	line-height:28px;
+	font-size:10px;
+}
+/*板块三*/
+.muen-3{
+	width:100%;
+	height:400px;
+	margin:20px auto;
+}
+
+.muen-3 .project{
+	width:100%;
+	height:400px;
+}
+
+.project-left{
+	width:58%;
+	height:100%;
+	float:left;
+}
+
+.project img{
+	width:280px;
+	height:150px;
+	opacity:0;
+	transition: all 0.3s;/*过度渐变*/	 
+	border:2px solid #000;
+}
+
+.warp-pic-1{
+	animation: scrle 1s;	
+	animation-fill-mode:forwards;
+	transition:all 0.3s;
+}
+
+@keyframes scrle{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+
+.warp-pic-2{
+	animation: scrle 1s;
+	animation-fill-mode:forwards;
+	animation-delay:0.5s;
+}
+
+@keyframes scrle{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+
+.warp-pic-3{
+	animation: scrle 1s;
+	animation-fill-mode:forwards;
+	animation-delay:1s;	
+}
+
+@keyframes scrle{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+
+.warp-pic-4{
+	animation: scrle 1s;
+	animation-fill-mode:forwards;
+	animation-delay:1.5s;	
+}
+
+@keyframes scrle{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+
+.warp{
+	margin:20px;
+	position:relative;
+	display:inline-block;
+	overflow:hidden;
+}
+
+.cover{
+	position:absolute;
+	width:284px;
+	height:154px;
+	opacity:0;
+	background:none;
+	left:0;
+	top:0;
+	text-align:center;
+	line-height:150px;
+	font-size:21px;
+	z-index:3;	
+	color:#ffffff;
+}
+.cover:hover{
+	animation:roate 0.3s;
+	cursor:pointer;
+	opacity:0.8;
+	background:rgb(155,86,181);
+}
+
+@keyframes roate{
+	from{transform: rotate(30deg);}
+	to{transform: rotate(0deg);}
+}
+
+.project-right{
+	height:100%;
+	float:left;
+	margin-top:15px;
+	display:inline-block;
+	vertical-align:top;
+	overflow:hidden;
+}
+
+.project-right p{	
+	color:#fff;
+	font-size:20px;
+	line-height:20px;
+	margin:35px 0 0 200%;
+	animation: movep 2s;
+	animation-fill-mode:forwards;
+	opacity:1;
+}
+
+@keyframes movep{
+	from{opacity:0.5;margin-left:100%}
+	to{opacity:1;margin-left:0}
+}
+
+.project-right h2{
+	color:#fff;
+	margin-left:200%;
+	white-space:nowrap;/*文字强制不换行*/
+}
+
+.project-right h2{
+	opacity:1;
+	animation: movee 2s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes movee{
+	from{opacity:0.5;margin-left:100%}
+	to{opacity:1;margin-left:0}
+}
+/*板块四*/
+.muen-4{
+	height:200px;
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+	overflow:hidden;
+}
+.muen-4 h3{
+	color:white;
+	line-height:100px;
+	animation:a 2s;
+}
+@keyframes a{
+	from{margin-left:-100%;opacity:0;}
+	to{opacity:1;}
+}
+.muen-4 a{
+	color:white;
+	line-height:54px;
+	animation:b 2s;
+}
+
+@keyframes b{
+	from{margin-right:-100%;opacity:0;}
+	to{opacity:1;}
+}
+/*css3animation动画默认会自动回到css中设置的样式的最终状态*/
+.muen-4 a:hover{
+	text-decoration:underline;
+}
+/*板块五*/
+.muen-5{
+	width:80%;
+	margin:0 auto;
+	height:300px;
+	overflow:hidden;
+}
+.touchMe{
+	width:100%;
+	text-align:center;
+	color:#fff;
+	overflow:hidden;
+}
+.touchMe h2{
+	margin:20px;
+	font-size:25px;
+	font-weight:600;
+	letter-spacing:2px;
+	animation:touch 2s;
+}
+@keyframes touch{
+	from{margin-left:-100%;opacity:0;}
+	to{opacity:1;}
+}
+.touchMe p{
+	margin:20px;
+	font-size:16px;
+	letter-spacing:1px;
+	color:rgb(182,187,189);	
+	animation:words 1.5s;
+	animation-delay:0.5s;
+	opacity:0;
+	animation-fill-mode: forwards;
+}
+@keyframes words{
+	from{margin-right:-100%;opacity:0;}
+	to{opacity:1;}
+}
+.touchMe ul{
+	width:100%;
+	animation:icon 2.5s;
+	opacity:0;
+	animation-fill-mode: forwards;
+}
+@keyframes icon{
+	from{margin-top:50%;opacity:0;}
+	to{opacity:0.9;}
+}
+.touchMe ul li{
+	display:inline-block;
+	margin:10px 20px;
+}
+.touchMe ul li a{
+	font-size:28px;
+	color:#fff;
+}
+.touchMe ul li a:hover{
+	color:rgb(182,187,189);	
+}
+
+@media screen and (max-width:1268px) and (min-width: 956px){
+	.nav{
+		width:auto;
+	}
+	.til{
+		width:auto;
+	}
+	.warp img{
+		width:198px;
+		height:107px;
+	}
+	.warp span{
+		width:201px;
+		height:110px;
+		line-height:110px;
+	}
+}
+
+@media screen and (max-width:956px) and (min-width:598px){
+	.nav{
+		width:100%;
+		margin:0;
+	}
+	.nav-bar{
+		width:84%;
+		margin:0 auto;
+		float:none;
+	}
+	.til{
+		display:none;
+	}
+	.warp img{
+		width:198px;
+		height:107px;
+	}
+	.warp span{
+		width:201px;
+		height:110px;
+		line-height:110px;
+	}
+	.project-left{
+		width:50%;
+	}
+	.project-right p{
+		font-size:10px;
+	}
+	.muen-3{
+		height:600px;
+	}
+}
