@@ -49,7 +49,7 @@ $(function(){
 			$(".skills p").remove();
 			setTimeout(function(){$(".skills").append("<p>Html+Css</p>");},0);
 			setTimeout(function(){$(".skills").append("<p>熟练使用js，dom操作</p>");},100);
-			setTimeout(function(){$(".skills").append("<p>了解less，sass</p>");},200);
+			setTimeout(function(){$(".skills").append("<p>了解php,mysql</p>");},200);
 			setTimeout(function(){$(".skills").append("<p>熟悉js框架jquery</p>");},300);
 			a = 1;
 		}
